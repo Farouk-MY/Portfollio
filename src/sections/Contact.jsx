@@ -23,8 +23,8 @@ const Contact = () => {
 
     try {
       await emailjs.send(
-        import.meta.env.VITE_SERVICE_KEY,
-        import.meta.env.VITE_TEMPLATE_KEY,
+        "service_pt59m3t",
+        "template_asvqb8b",
         {
           from_name: form.name,
           to_name: "Farouk Messay",
@@ -32,7 +32,7 @@ const Contact = () => {
           to_email: "faroukmessai221@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        "5yol4kdNgw7PS81-y"
       );
 
       setLoading(false);
